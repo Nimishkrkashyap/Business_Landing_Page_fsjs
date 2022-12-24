@@ -1,0 +1,466 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+.navigation{
+  background-color: #636c79;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+.nav_left img{
+  height: 3.5rem;
+}
+.nav_link{
+  text-decoration: none;
+  color: #ebedee;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 3rem;
+  font-weight: 500;
+}
+.nav_btn{
+  background-color: transparent;
+  border: 1px solid #ebedee2a;
+  padding: .9rem 3.2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5rem;
+  font-size: 1.1rem;
+}
+
+/* Home */
+.home_container{
+  background-color: #636c79;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 13rem;
+}
+.home_left{
+  height: 47rem;
+  width: 36rem;
+  background-color: #ebedee;
+  background-image: url(../image/1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+}
+.home_right{
+  width: 42rem;
+}
+.home_heading{
+  color: #fff;
+  font-size: 4.7rem;
+}
+.home_sub_heading{
+  font-size: 1.4rem;
+  color: #ebedeebd;
+  /* width: 110%; */
+  line-height: 2.5rem;
+  margin: 2rem 0;
+}
+.home_mail_box{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 40rem;
+}
+.home_mail_box i{
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+.home_input{
+  border: none;
+  margin-left: 1rem;
+}
+.home_input:focus{
+  outline: none;
+}
+.home_input::placeholder{
+  color: #999999;
+}
+.home_button,.page_button{
+  background-color: #8bb7a2;
+  border: none;
+  padding: 1.2rem 3.5rem;
+  color: #fff;
+  margin: .8rem .8rem .8rem 5.8rem;
+}
+
+/* About */
+.about_container{
+  padding: 6rem 13rem;
+}
+.about_heading{
+  font-size: 3.5rem;
+  width: 55rem;
+  margin: 0 auto;
+  font-weight: 900;
+  text-align: center;
+}
+.about_data{
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 4rem;
+}
+.about_data h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.about_data p{
+  color: #252525;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-weight: 900;
+}
+.about_image{
+  height: 45vw;
+  background-image: url(../image/2.jpg);
+  background-size: 100% 145%;
+  background-position: top;
+}
+
+/* Pages */
+.pages_container{
+  padding: 6rem 13rem;
+}
+.pages_heading{
+  font-size: 4rem;
+  font-weight: 700;
+  width: 40rem;
+  margin: 0rem auto;
+  text-align: center;
+}
+.page_one, .page_two,.page_three{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem 0;
+}
+.page_one .page_left, .page_two .page_right,.page_three .page_left{
+  width: 40rem;
+}
+.page_heading{
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+.page_sub_heading{
+  font-size: 1.45rem;
+  color: #252525;
+  margin: 2rem 0;
+}
+.page_one .page_right, .page_two .page_left,.page_three .page_right{
+  height: 35vw;
+  width: 35vw;
+  background-position: right;
+  background-size: cover;
+}
+.page_one .page_right{
+  background-image: url(../image/4.jpg);
+}
+.page_two .page_left{
+  background-image: url(../image/5.jpg);
+  background-position: top;
+}
+.page_three .page_right{
+  background-image: url(../image/6.jpg);
+}
+.page_button{
+  margin: 0;
+}
+
+/* Agent */
+.agent_container{
+  padding: 0rem 13rem;
+  margin-bottom: 7rem;
+}
+.agent_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 4rem 0;
+}
+.agent_header_left{
+  font-size: 3rem;
+  font-weight: 900;
+  width: 30rem;
+  line-height: 4.5rem;
+}
+.agent_header_right{
+  font-size: 1.4rem;
+  color: #6e6e6ec5;
+  width: 40rem;
+  word-spacing: 2px;
+  line-height: 2.5rem;
+}
+.agent_card_container{
+  display: flex;
+  justify-content: space-between;
+}
+.agent_card_one .agent_card_img, .agent_card_two .agent_card_img, .agent_card_three .agent_card_img{
+  height: 37.5rem;
+  width: 25rem;
+  background-position: center;
+  background-size: cover;
+}
+.agent_card_one .agent_card_img{
+  background-image: url(../image/7.jpg);
+}
+.agent_card_two .agent_card_img{
+  background-image: url(../image/8.jpg);
+}
+.agent_card_three .agent_card_img{
+  background-image: url(../image/3.jpg);
+}
+.agent_card_heading{
+  font-weight: 900;
+  margin: 1rem 0;
+  color: #000;
+}
+.agent_card_para{
+  font-size: 1.1rem;
+  width: 25rem;
+  font-weight: 600;
+  color: #525252b2;
+}
+.agent_btn{
+  background-color: #8bb7a2;
+  border: none;
+  padding: 1.2rem 3.5rem;
+  color: #fff;
+  margin: 4rem auto;
+  display: block;
+}
+
+/* Footer */
+.footer_container{
+  padding: 6rem 13rem;
+  background-color: #10181d;
+}
+.footer_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_header_left img{
+  height: 2.5rem;
+}
+.footer_header_right{
+  display: flex;
+}
+.footer_header_right i{
+  color: #fff;
+  font-size: .8rem;
+  margin-left: 1rem;
+  background-color: #282f34;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_line{
+  height: 1px;
+  width: 100%;
+  background-color: #6b6b6b42;
+  margin: 4rem 0;
+}
+.footer_bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.footer_links{
+  display: flex;
+  flex-direction: column;
+}
+.footer_bottom_heading{
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.footer_link{
+  text-decoration: none;
+  color: #878a8b;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 1080px){
+  html{
+      font-size: 50%;
+    }
+
+  /*Home  */
+  .home_container{
+    padding: 6rem 10rem;
+  }
+  .home_left{
+    height: 42vw;
+    width: 33vw;
+  }
+  .home_button{
+    padding: 1.5rem 3rem;
+    /* font-size: 1rem; */
+    margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+  }
+
+  /* About */
+  .about_container{
+    padding: 6rem 10rem;
+  }
+  /* pages */
+  .pages_container{
+    padding: 6rem 10rem;
+  }
+
+  /* Agent */
+  .agent_container{
+    padding: 0rem 10rem;
+  }
+  .agent_header_right{
+    width: 41rem;
+  }
+  .agent_card_heading{
+    font-size: 2.1rem;
+  }
+  .agent_card_para{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px){
+  html{
+      font-size: 40%;
+  }
+  .home_button{
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 0.5rem 0.5rem .9rem;
+  }
+
+}
+@media (max-width: 620px) {
+  .nav_right{
+    display: none;
+  }
+  .home_container{
+    flex-direction: column;
+  }
+  .home_sub_heading{
+    font-size: 1.8rem;
+  }
+  .home_left{
+    height: 55rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+  }
+  .home_right{
+    width: 63rem;
+    text-align: center;
+  }
+  .home_mail_box{
+    margin: 0 auto;
+  }
+
+  .about_data{
+    margin: 4rem 2rem;
+  }
+  .about_data p{
+    font-size: 1.6rem;
+  }
+
+  .pages_container{
+    padding: 0rem 10rem;
+  }
+  .page_one,.page_three{
+    flex-direction: column-reverse;
+  }
+  .page_two{
+    flex-direction: column;
+  }
+  .page_one .page_left, .page_two .page_right,.page_three .page_left{
+    text-align: center;
+    width: 54rem;
+  }
+  .page_one .page_right, .page_two .page_left,.page_three .page_right{
+    height: 45rem;
+    width: 45rem;
+  }
+  .page_heading{
+    margin-top: 3rem;
+  }
+  .page_sub_heading{
+    font-size: 1.8rem;
+  }
+
+  .agent_header_left{
+    width: 37rem;
+    text-align: center;
+  }
+  .agent_header_right{
+    font-size: 1.8rem;
+    width: 58rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .agent_header{
+    flex-direction: column;
+  }
+  .agent_card_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .agent_card_one .agent_card_img, .agent_card_two .agent_card_img, .agent_card_three .agent_card_img{
+    height: 60rem;
+    width: 40rem;
+  }
+  .agent_card_para{
+    width: 40rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 550px) {
+  html{
+    font-size: 35%;
+  }
+  .about_data{
+    text-align: center;
+    margin: 4rem 0rem;
+  }
+  .agent_card_para{
+    font-size: 1.8rem;
+  }
+
+  .footer_header_right i{
+    font-size: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .footer_bottom{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #8bb7a2; */
+  }
+  .footer_links{
+    width: 18rem;
+    margin: 0 0 3rem 2.5rem;
+  }
+  .footer_bottom_heading{
+    font-size: 1.8rem;
+  }
+  .footer_link{
+    font-size: 1.6rem;
+  }
+}
